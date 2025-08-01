@@ -16,7 +16,7 @@ const Footer = () => {
     }}>
       <Container maxWidth="lg">
         <Typography variant="body2">
-          &copy; {new Date().getFullYear()} Mini E-Commerce Website. All rights reserved.
+          &copy; {new Date().getFullYear()} Sagar Kadam. All rights reserved.
         </Typography>
         <Typography variant="body2" sx={{ mt: 0.5 }}>
           Built with React & Material UI for Solytics Partners Internship.
