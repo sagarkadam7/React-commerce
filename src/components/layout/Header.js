@@ -76,11 +76,11 @@ function Header({
               "& fieldset": { borderColor: "transparent" }, // Hide default border
               "&:hover fieldset": { borderColor: "rgba(255,255,255,0.5)" }, // Border on hover
               "&.Mui-focused fieldset": { borderColor: "white" }, // Border when focused
-              color: "white", // Text color
+              color: "#343a40", // Text color
             },
-            "& .MuiInputLabel-root": { color: "white" }, // Label color
-            "& .MuiInputBase-input": { color: "white" }, // Input text color
-            "& .MuiInputAdornment-root .MuiSvgIcon-root": { color: "white" }, // Icon color
+            "& .MuiInputBase-input": { color: "#343a40" }, // Input text color
+            "& .MuiInputLabel-root": { color: "#343a40" }, // Label color
+            "& .MuiInputAdornment-root .MuiSvgIcon-root": { color: "#343a40" }, // Icon color
           }}
           InputProps={{
             startAdornment: (
@@ -102,7 +102,7 @@ function Header({
             borderRadius: 8,
           }}
         >
-          <InputLabel id="category-select-label" sx={{ color: "white" }}>
+          <InputLabel id="category-select-label" sx={{ color: "black" }}>
             Category
           </InputLabel>
           <Select
@@ -111,7 +111,7 @@ function Header({
             onChange={(e) => onCategoryChange(e.target.value)} // Callback for category changes
             label="Category"
             sx={{
-              color: "white",
+              color: "#343a40",
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "transparent",
               },
@@ -146,7 +146,7 @@ function Header({
             borderRadius: 8,
           }}
         >
-          <InputLabel id="sort-select-label" sx={{ color: "white" }}>
+          <InputLabel id="sort-select-label" sx={{ color: "black" }}>
             Sort By
           </InputLabel>
           <Select
@@ -155,7 +155,7 @@ function Header({
             onChange={(e) => onSortChange(e.target.value)} // Callback for sort order changes
             label="Sort By"
             sx={{
-              color: "white",
+              color: "#343a40",
               "& .MuiOutlinedInput-notchedOutline": {
                 borderColor: "transparent",
               },

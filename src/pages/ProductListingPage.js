@@ -11,7 +11,6 @@ import {
   Fade,
 } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 
 import { getProducts, getCategories } from "../api/fakeStoreApi";
@@ -209,18 +208,23 @@ function ProductListingPage() {
             variant="h1"
             component="h1"
             gutterBottom
-            sx={{ color: "white", fontWeight: 700, fontSize: "2.5rem" }}
+            sx={{ color: "black", fontWeight: 700, fontSize: "2.5rem" }}
           >
-           Explore Deals. Discover Trends. Shop Smart
+            Explore Deals. Discover Trends. Shop Smart
           </Typography>
-          <Typography variant="h6" sx={{ color: "white", mb: 3 }}>
+          <Typography variant="h6" sx={{ color: "#343a40", mb: 3 }}>
             Discover amazing products at unbeatable prices.
           </Typography>
           <Button
             variant="contained"
             color="primary"
             size="large"
-            sx={{ borderRadius: 20, px: 4, py: 1.5 }}
+            sx={{
+              borderRadius: 20,
+              px: 4,
+              py: 1.5,
+              color: "#FFD700", // Moved color to sx prop for cleaner styling
+            }}
             onClick={handleShopNowClick}
           >
             Shop Now!
